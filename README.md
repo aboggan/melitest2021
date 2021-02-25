@@ -30,7 +30,8 @@ Para los resultados sin precio (servicios, mano de obra, legales, etc) dejé val
 En `/client/src/utils`  hay una función para parsear el precio.
 La idea es que muestre el código de la moneda según tu ubicación y el `currency_id` que recibe. 
 
-> Por ejemplo si estás en Argentina y el precio es en pesos argentinos, vas a ver el símbolo "$" 
+> Por ejemplo si estás en Argentina y el precio es en pesos argentinos, vas a ver el símbolo "$".
+
 > Mismo caso pero no estás en el Argentina, vas a ver "ARS".
 
 Usando `Intl.NumberFormat` con el `currency_id` "ARS" si el valor tiene exactamente 4 dígitos el separador de miles no aparece. Así que le puse una regex para agregarlo en ese caso.
