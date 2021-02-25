@@ -6,13 +6,19 @@ Vas a necesitar dos terminales, una para el servidor y otra para el cliente.
 En "/server" ejecutás los comandos:
 
 `npm install`
+
 y luego
+
 `node app.js`
+
 vas a ver un mensaje `escuchando puerto 5000` indicando que ya está funcionando.
 
 En "/client" ejecutas los comandos:
+
 `npm install`
+
 y luego
+
 `npm start`
 
 Cuando termine abrirá el navegador en `http://localhost:3000/`
