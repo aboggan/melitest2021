@@ -1,0 +1,99 @@
+.item-detail {
+  &__error {
+    font-size: 34px;
+    text-align: center;
+    background: $primary-white;
+    margin-top: 32px;
+    border-radius: 4px;
+    height: 200px;
+    padding-top: 50px;
+  }
+  &__categories {
+    color: $medium-grey;
+    margin: 16px 0 16px 0;
+    font-size: 14px;
+    span {
+      margin-right: 10px;
+      word-break: break-word;
+      &::after {
+        content: ">";
+        margin-left: 10px;
+      }
+      &:last-child {
+        font-weight: bold;
+        &::after {
+          content: "";
+        }
+      }
+    }
+  }
+  &__info {
+    padding-top: 32px;
+    background: $primary-white;
+    border-radius: 4px;
+    padding-bottom: 32px;
+    &__image {
+      text-align: center;
+      img {
+        max-width: 100%;
+        object-fit: contain;
+        border-radius: 4px;
+      }
+    }
+    &__buy-box {
+      @include media-breakpoint-down(md) {
+        text-align: center;
+      }
+      &__sold {
+        font-size: 14px;
+        margin-bottom: 14px;
+      }
+      &__title {
+        font-size: 24px;
+
+        font-weight: bold;
+        line-height: 1.2;
+        @include media-breakpoint-up(md) {
+          max-width: 80%;
+        }
+      }
+      &__price {
+        font-size: 46px;
+        margin: 32px 0 32px 0;
+        span {
+          font-size: 20px;
+          position: relative;
+          top: -17px;
+          left: -9px;
+        }
+      }
+      &__buy-button {
+        button {
+          border: none;
+          border-radius: 4px;
+          text-align: center;
+          background: $primary-blue;
+          color: $primary-white;
+          width: 80%;
+          height: 45px;
+        }
+      }
+    }
+    &__description {
+      margin: 50px 0 0 32px;
+      @include media-breakpoint-down(md) {
+        margin: 30px 0 0 0;
+        text-align: center;
+      }
+      div:nth-child(1) {
+        font-size: 28px;
+        margin-bottom: 32px;
+      }
+      div:nth-child(2) {
+        font-size: 16px;
+        color: $medium-grey;
+        word-break: break-word;
+      }
+    }
+  }
+}
