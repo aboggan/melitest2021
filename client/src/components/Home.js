@@ -6,13 +6,11 @@ import {
 } from "react-router-dom";
 
 
-function Home(match) {
-
-
+function Home() {
 
     return (
         <div >
-            <h2>Busca algo</h2>
+            
         </div>
     );
 }
